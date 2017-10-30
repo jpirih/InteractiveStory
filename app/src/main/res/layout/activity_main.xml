@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kekec_apps.interactivestory.ui.MainActivity"
+    android:id="@+id/relativeLayout">
+
+    <ImageView
+        android:id="@+id/titleImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/main_title"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/title_image_desc"
+        android:adjustViewBounds="true"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/startButton"
+        android:text="@string/startButton"
+        android:textSize="16sp"
+        android:background="@android:color/white"
+        android:textColor="#3A8AEC"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/name_field_hint"
+        android:maxLength="30"
+        app:layout_constraintTop_toBottomOf="@+id/titleImageView"/>
+
+</android.support.constraint.ConstraintLayout>
